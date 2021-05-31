@@ -38,4 +38,8 @@ class MyCmd(Cmd):
 	def do_exit(self, args):
 		raise SystemExit()
 
-MyCmd().cmdloop("Start - rozpoczyna wyświetlanie, c - zatrzymuje, set - pozwala ustawić zegar (podaj sekundy po spacji), exit - wyjście z programu")
+MyCmd().cmdloop("""
+start - startuje zegar, 
+c - zatrzymuje zegar, 
+set - pozwala ustawić zegar (podaj sekundy po spacji np 'set 3600'), 
+exit - wyjście z programu""")
